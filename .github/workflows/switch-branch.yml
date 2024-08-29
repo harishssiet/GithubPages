@@ -47,7 +47,7 @@ jobs:
           echo "Switching GitHub Pages to $target_branch"
 
           # Use GitHub API to switch the Pages branch
-          curl -L \ -X PATCH \
+          curl -X PATCH \
            -H "Authorization: token $PAT_TOKEN " \
             -H "Accept: application/vnd.github.v3+json" \
             -d '{"source":{"branch":"'"$target_branch"'"}}' \
