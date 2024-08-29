@@ -50,6 +50,6 @@ jobs:
           curl -L \ -X POST \
            -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            -d '{"source":{"branch":"main"}}' \
+            -d '{"source":{"branch":"main","path":"/"}}' \
             https://api.github.com/repos/${{ github.repository }}/pages
             
