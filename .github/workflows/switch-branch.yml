@@ -14,6 +14,10 @@ on:
 jobs:
   switch-branch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
