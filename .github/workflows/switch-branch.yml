@@ -51,5 +51,5 @@ jobs:
            -H "Authorization: Bearer $PAT_TOKEN " \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/${{ github.repository }}/pages \
-            -d '{"source":{"branch":"main","path":"/"}}'
+            -d '{"source":{"branch":"'"$target_branch"'"}}'
             
